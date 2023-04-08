@@ -4,11 +4,12 @@ import Map from '../../components/Map';
 import Navbar from "../../components/Navbar";
 import Promo from '../../components/Promo';
 import Slider from '../../components/Slider';
+import NewNav from '../../components/Nav/Navbar'
 
 const Home = () => {
   return (
     <>
-        <Navbar />
+        <NewNav />
         <Slider />
         <Promo />
         <Map />
