@@ -15,15 +15,17 @@ const Container = styled.div`
     align-content: center;
     justify-content: center;
     align-items: center;
-    ${mobile({
-        display: "none"
-    })}
+
 `;
 
 const Wrapper = styled.div`
 
     padding: 20px;
     display: flex;
+    @media (max-width: 768px){
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 const ImageContainer = styled.div`
@@ -36,11 +38,12 @@ const Image = styled.img`
 `
 
 const InfoContainer = styled.div`
-
+    align-items: center;
     display:flex;
     flex-direction: column;
     flex: 1;
     justify-content: center
+
 `;
 
 const Text = styled.span`
