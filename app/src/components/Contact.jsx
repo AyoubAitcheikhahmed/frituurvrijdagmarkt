@@ -14,7 +14,7 @@ const Input = styled.input`
   margin: 10px 0;
   padding: 12px;
   border-radius: 8px;
-  border: 2px solid #ccc;
+  border: 2px solid rgb(38, 38, 3);
   font-size: 16px;
   width: 100%;
 
@@ -22,20 +22,21 @@ const Input = styled.input`
     outline: none;
     border: 2px solid #007bff;
   }
+
 `;
 
 const TextArea = styled.textarea`
   margin: 10px 0;
   padding: 12px;
   border-radius: 8px;
-  border: 2px solid #ccc;
+  border: 2px solid rgb(38, 38, 3);
   font-size: 16px;
   width: 100%;
   resize: vertical;
 
   &:focus {
     outline: none;
-    border: 2px solid #007bff;
+    border: 2px solid rgb(0, 168, 82);
   }
 `;
 
@@ -43,12 +44,13 @@ const Title = styled.span`
 margin-top: 20px;
 color: rgb(5 143 72);
 font-size: 3em;
-font-weight: 500;
+font-weight: 900;
 `
 const Desc = styled.p`
-color: white;
+color: #222222;
 font-size: 20px;
 margin-bottom: 20px;
+font-weight: 700;
 `
 
 
@@ -59,12 +61,16 @@ const Button = styled.button`
     border: none;
     background-color:rgb(0, 168, 82);
     color: #fff;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: 900;
+    width: 100%;
     cursor: pointer;
     &:hover {
-    background-color: #0069d9;
+    background-color: #323232;
     }
+
+
+
 `;
 
 

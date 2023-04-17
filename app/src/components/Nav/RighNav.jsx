@@ -11,7 +11,8 @@ const Ul = styled.ul`
 
     li{
       cursor: pointer;
-        font-size: 1em;
+      font-weight: 900;
+        font-size: 1.3em;
         color: white;
         padding: 18px 10px;
         position: relative;
@@ -76,6 +77,7 @@ const Ul = styled.ul`
 const OrderButton = styled.button`
     background-color: #ffc01c;
     font-size: 1.5em;
+    font-weight: 900;
     color: white;
     padding: 5px 10px;
     margin-left: 20px;

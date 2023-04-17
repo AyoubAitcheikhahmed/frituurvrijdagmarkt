@@ -1,10 +1,10 @@
 import React from 'react'
 import { Slide } from 'react-slideshow-image';
-import './Footer.css'
+import './Slideshow.css'
 import 'react-slideshow-image/dist/styles.css';
 
 
-const Footer = () => {
+const Slideshow = () => {
     const images = [
         "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
 
@@ -27,4 +27,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Slideshow

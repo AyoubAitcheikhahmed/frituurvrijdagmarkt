@@ -1,18 +1,21 @@
 import {React, useState} from 'react'
 import styled from 'styled-components'
 import RightNav from './RighNav'
+
+
 const BurgerMenu = styled.div`
     cursor: pointer;
     width: 2rem;
     height: 2rem;
     position: fixed;
-    top: 15px;
-    right: 20px;
+    top: 40px;
+    right: 40px;
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
     z-index: 2;
     display: none;
+
 
     @media (max-width: 768px){
         display: flex;
@@ -22,9 +25,9 @@ const BurgerMenu = styled.div`
 
     div{
         width:2rem;
-        height: 0.25rem;
+        height: 0.3rem;
         background-color: ${({open }) => open ? '#028642' : '#ecaf14'};
-        border-radius: 10px;
+        border-radius: 5px;
         transform-origin: 1px;
         transition:  all 0.3s linear;
 
@@ -48,6 +51,8 @@ const Burger = () => {
     const [open,setOpen] = useState(false)
   return (
     <>
+    
+
     <BurgerMenu open= {open} onClick = {() => setOpen(!open)}>
         <div />
         <div />
@@ -55,7 +60,7 @@ const Burger = () => {
     </BurgerMenu>
 
     <RightNav open= {open}/>
-    </>
+   </>
 
   )
 }

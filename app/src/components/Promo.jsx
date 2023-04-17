@@ -35,6 +35,10 @@ const ImageContainer = styled.div`
 
 const Image = styled.img`
 
+@media (max-width: 700px) {
+  height: 200px;
+}
+
 `
 
 const InfoContainer = styled.div`
@@ -48,21 +52,23 @@ const InfoContainer = styled.div`
 
 const Text = styled.span`
     color: white;
-    font-size: 2em;
-    font-weight: 500;
+    font-size: 3em;
+    font-weight: 900;
+    margin: 10px;
 `
 const Desc = styled.p`
 color: #ffb800;
 font-size: 30px;
+font-weight: 700;
 `
 
 const Button = styled.button`
-font-weight: 500;
+font-weight: 900;
 font-size: 50px;
 background-color: #ffc01c;
 color: white;
-margin: 10px 0;
-padding: 5px 10px;
+margin: 20px 0;
+padding: 10px 50px;
 border: 0;
 border-radius: 3px;
 transition: all .3s ease-in-out;
