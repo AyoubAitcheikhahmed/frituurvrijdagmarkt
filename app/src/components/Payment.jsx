@@ -1,14 +1,17 @@
 import React from 'react'
 import styled from 'styled-components';
-import visa from './../assets/visa.png'
+
 import bancontact from './../assets/bancontact.png'
-import mastercard from './../assets/master.png'
-
-
+import cash from './../assets/cash.png'
+import belfius from './../assets/belfius.png'
+import ing from './../assets/ing.png'
+import kbc from './../assets/kbc.png'
+import mistercash from './../assets/mistercash.png'
 
 
 
 const Container = styled.div`
+  
     z-index: 1;
     overflow: hidden;
     background: rgb(255, 255, 255);
@@ -32,7 +35,7 @@ const Wrapper = styled.div`
 `;
 
 const ImageContainer = styled.div`
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   margin-top: 1rem;
@@ -55,8 +58,11 @@ const Payment = () => {
         <Text>We accepte the following payment methodes:</Text>
             <ImageContainer>
             <Image src={bancontact}/>
-            <Image src={mastercard}/>
-            <Image src={visa}/>
+            <Image src={ing}/>
+            <Image src={belfius}/>
+            <Image src={kbc}/>
+            <Image src={cash}/>
+            <Image src={mistercash}/>
             </ImageContainer>
     </Container>
   )

@@ -10,17 +10,17 @@ top: 0;
     background: #00a852;
     box-shadow: 0px 8px 16px -5px rgba(0,0,0,0.49);
     ${mobile({
-        height: "50px",
-        padding: "5px 0px"
-        })}
+    height: "50px",
+    padding: "5px 0px"
+})}
 `
 const Wrapper = styled.div`
     // align-items: center;
     // padding: 10px 80px;
     display: flex;
     ${mobile({
-        padding: "10px 0px",
-        })}
+    padding: "10px 0px",
+})}
 `
 const Left = styled.div`
     display: flex;
@@ -43,9 +43,9 @@ const Right = styled.div`
         margin-left:15px;
     }
     ${mobile({
-        flex: 1,
-        justifyContent: "center"
-        })}
+    flex: 1,
+    justifyContent: "center"
+})}
 `;
 
 const MenuItem = styled.span`
@@ -92,9 +92,9 @@ const Logo = styled.img`
     cursor: pointer;
     display: flex;
     ${mobile({
-        width: "100px",
-        height: "30px",
-        })}
+    width: "100px",
+    height: "30px",
+})}
 `;
 
 
@@ -104,7 +104,7 @@ const Navbar = () => {
         <Container>
             <Wrapper>
                 <Left>
-                  <Logo src={logoSrc} />
+                    <Logo src={logoSrc} />
                 </Left>
                 <Right>
                     <MenuItem>Home</MenuItem>

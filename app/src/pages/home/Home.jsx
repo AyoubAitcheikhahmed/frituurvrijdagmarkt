@@ -6,6 +6,7 @@ import Promo from '../../components/Promo';
 import Slider from '../../components/Slider';
 import NewNav from '../../components/Nav/Navbar'
 import Payment from '../../components/Payment';
+import Footer from '../../components/Footer/Footer'
 const Home = () => {
   return (
     <>
@@ -14,8 +15,8 @@ const Home = () => {
         <Payment />
         <Promo />
         <Map />
+        <Footer />
         <Contact />
-        
     </>
     )
 }
