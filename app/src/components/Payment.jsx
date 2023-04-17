@@ -22,6 +22,10 @@ const Container = styled.div`
     align-content: center;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 768px){
+      height: 40vh;
+    }
 `;
 
 const Wrapper = styled.div`
@@ -39,7 +43,18 @@ const ImageContainer = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   margin-top: 1rem;
-`
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    & > div {
+      width: 50%;
+      padding: 0.5rem;
+    }
+  }
+`;
+
 
 const Image = styled.img`
     height: 50px;
@@ -49,6 +64,9 @@ const Image = styled.img`
 const Text = styled.span`
  font-size: 1.5rem;
   text-align: center;
+  @media (max-width: 768px){
+    margin: 10px;
+    }
 `
 
 

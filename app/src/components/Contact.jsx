@@ -23,6 +23,11 @@ const Input = styled.input`
     border: 2px solid #007bff;
   }
 
+  @media (max-width: 768px){
+    margin-right: 5px;
+    width: 100%;
+    }
+
 `;
 
 const TextArea = styled.textarea`
@@ -52,7 +57,9 @@ font-size: 20px;
 margin-bottom: 20px;
 font-weight: 700;
 `
-
+const FormWrapper = styled.div`
+margin: 0px 20px;
+`
 
 const Button = styled.button`
     margin: 20px 0;
@@ -92,6 +99,7 @@ const Contact = () => {
         <Desc>
             We would like to hear from you!
         </Desc>
+      <FormWrapper>
       <form onSubmit={handleSubmit}>
         <Input
           type="text"
@@ -112,6 +120,7 @@ const Contact = () => {
           onChange={(e) => setMessage(e.target.value)}/>
           <Button>Submit</Button>
      </form>
+     </FormWrapper>
      
     </Container>
   );

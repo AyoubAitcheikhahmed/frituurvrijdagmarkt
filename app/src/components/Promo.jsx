@@ -15,6 +15,9 @@ const Container = styled.div`
     align-content: center;
     justify-content: center;
     align-items: center;
+    @media (max-width: 768px){
+        height: 70vh;
+    }
 
 `;
 
@@ -35,8 +38,8 @@ const ImageContainer = styled.div`
 
 const Image = styled.img`
 
-@media (max-width: 700px) {
-  height: 200px;
+@media (max-width: 768px) {
+  height: 150px;
 }
 
 `
@@ -55,11 +58,20 @@ const Text = styled.span`
     font-size: 3em;
     font-weight: 900;
     margin: 10px;
+    @media (max-width: 768px){
+        font-size: 1.5em;
+        align-items: center;
+    }
 `
 const Desc = styled.p`
 color: #ffb800;
 font-size: 30px;
 font-weight: 700;
+
+@media (max-width: 768px){
+        font-size: 1em;
+        align-items: center;
+    }
 `
 
 const Button = styled.button`
@@ -75,6 +87,11 @@ transition: all .3s ease-in-out;
 &&:hover{
     background-color: #e3a400;
 }
+@media (max-width: 768px){
+        font-size: 1.5em;
+
+    }
+
 `; 
 
 const Promo = () => {
